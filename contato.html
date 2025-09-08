@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Startup Tech</title>
+    <link rel="stylesheet" href="./CSS/stylecontato.css">
+    <link rel="stylesheet" href="/Reponsividade/responsividadecontato.css"
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo"></h1>
+            <img src="Captura de tela 2025-09-06 171301.png" alt="Logo da Startup Tecnologic" class="logo-img">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="pagina-contato">
+            <div class="container">
+                <h2>Fale Conosco</h2>
+                <p>Tem alguma dúvida, sugestão ou projeto em mente? Nossa equipe retornará em breve.</p>
+                
+                <div class="contato-wrapper">
+                    <!-- Formulário -->
+                    <form action="obrigado.html" method="GET" class="form-contato">
+                        <div class="form-grupo">
+                            <label for="nome"><i class="fas fa-user"></i> Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="email"><i class="fas fa-envelope"></i> E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="telefone"><i class="fas fa-phone"></i> Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" pattern="[0-9]{11}" maxlength="11">
+                        </div>
+                        <div class="form-grupo">
+                            <label for="mensagem"><i class="fas fa-comment"></i> Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Deixe sua mensagem..." required minlength="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                    </form>
+
+                    <!-- Informações de contato -->
+                    <div class="contato-info">
+                        <h3>Entre em contato</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Rua paraiba, 123, fortaleza, Ceará</p>
+                        <p><i class="fas fa-envelope"></i> contato@startuptecnologic.com</p>
+                        <p><i class="fas fa-phone"></i> (85) 85632-7895</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-coluna">
+                <h3>Startup Tecnologic</h3>
+                <p>Soluções digitais que impulsionam o sucesso. Inovação e tecnologia para transformar ideias em realidade.</p>
+            </div>
+            <div class="footer-coluna">
+                 <footer>
+        <p>Siga-nos nas redes sociais:</p>
+        <a href="https://www.instagram.com/bea.carvalho22/">Instagram</a> | 
+        <a href="https://github.com/beatriz232">Github</a> | 
+        <a href="#">Linkedin</a>    
+       </ul>
+        </div>
+    </div>
+    <p>&copy; 2025 Startup Tecnologic. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

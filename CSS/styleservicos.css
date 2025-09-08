@@ -1,0 +1,209 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column; /* menu em cima, logo abaixo */
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: #000000;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-bottom: 4px solid #F4D35E;
+}
+
+.logo-img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 1rem; ;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.ativo {
+    color: #F4D35E;
+}
+
+/* Seção Nossos Serviços */
+.nossos-servicos {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+}
+
+.nossos-servicos h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #001528;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Grid de cards */
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Card individual */
+.nossos-servicos .card {
+    background-color: #FFFFFF;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-top: 4px solid #001528;
+    transition: transform 0.3s, box-shadow 0.3s, border-top-color 0.3s;
+}
+
+.nossos-servicos .card i {
+    font-size: 3rem;
+    color: #001528;
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nossos-servicos .card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #001528;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nossos-servicos .card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.nossos-servicos .btn-card-servico {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    background-color: #F4D35E;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nossos-servicos .btn-card-servico:hover {
+    background-color: #001528;
+    color: #fff;
+}
+
+/* Hover no card */
+.nossos-servicos .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    border-top-color: #F4D35E;
+}
+
+.nossos-servicos .card:hover i {
+    background-color: #001528;
+    color: #F4D35E;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    border-top: 4px solid #F4D35E;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-coluna {
+    flex: 1 1 250px;
+}
+
+.footer-coluna h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-coluna ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-coluna ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-coluna a {
+    color: #F4D35E;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-coluna a:hover {
+    color: #ffffff;
+}
+
+.redes-sociais a {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    color: #F4D35E;
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #ffffff;
+}

@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .contato-wrapper {
+        flex-direction: column;
+    }
+
+    .pagina-contato h2 {
+        font-size: 2rem;
+    }
+
+    .pagina-contato p {
+        font-size: 1rem;
+    }
+}
